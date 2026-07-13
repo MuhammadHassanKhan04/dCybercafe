@@ -1,0 +1,70 @@
+<%- include('partials/header') %>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <span style="color:rgba(255,255,255,0.9)">Services</span>
+      </div>
+      <h1>Our Healthcare BPO Services</h1>
+      <p>Comprehensive virtual medical solutions designed to streamline your operations, boost revenue, and ensure full HIPAA compliance.</p>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="services-filter-bar">
+    <div class="container">
+      <div class="filter-inner">
+        <div class="search-box">
+          <span class="search-icon"><i class="bx bx-search"></i></span>
+          <input type="text" id="serviceSearch" placeholder="Search services..." aria-label="Search services" />
+        </div>
+        <div class="filter-tags">
+          <button class="filter-tag active" data-filter="all">All Services</button>
+          <button class="filter-tag" data-filter="billing">Billing &amp; Posting</button>
+          <button class="filter-tag" data-filter="verification">Eligibility &amp; Credentialing</button>
+          <button class="filter-tag" data-filter="coding">Coding</button>
+          <button class="filter-tag" data-filter="recovery">AR &amp; Denial Recovery</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES LISTING -->
+  <section class="services-listing">
+    <div class="container">
+      <p class="services-count">Showing <strong id="servicesCount"><%= services.length %></strong> services</p>
+      
+      <div class="services-grid" id="servicesGrid">
+        <% services.forEach((service, index) => { %>
+          <div class="service-card service-card-item fade-up" data-category="<%= service.category %>">
+            <div class="service-image-wrap">
+              <img src="<%= service.image %>" alt="<%= service.name %>" class="service-card-photo" />
+            </div>
+            <div class="service-card-body">
+              <h3><%= service.name %></h3>
+              <p><%= service.shortDescription %></p>
+              <a href="/services/<%= service.slug %>" class="btn btn-outline btn-sm">Learn More <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff;margin-bottom:16px;display:inline-block;">Get Started</span>
+      <h2>Don't See What You Need?</h2>
+      <p>We offer custom healthcare BPO solutions tailored to your practice's unique requirements. Contact us to discuss.</p>
+      <div class="cta-btns">
+        <a href="/contact" class="btn btn-secondary btn-lg"><i class="bx bx-envelope"></i> Contact Us</a>
+        <a href="/contact" class="btn btn-outline-white btn-lg"><i class="bx bx-calendar"></i> Request Consultation</a>
+      </div>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>

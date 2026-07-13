@@ -1,0 +1,264 @@
+<%- include('partials/header') %>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-particles"></div>
+    <div class="container">
+      <div class="hero-content">
+        <!-- Left: Text -->
+        <div class="hero-text">
+          <div class="hero-badge">
+            <div class="hero-badge-dot"></div>
+            HIPAA-Compliant US Healthcare BPO
+          </div>
+
+          <h1 class="hero-title">
+            D Cyber <span class="highlight">Office</span>
+          </h1>
+          <p class="hero-subtitle">
+            Helping US Healthcare Providers Grow Through Reliable, Secure, and HIPAA-Focused Virtual Medical Office Solutions.
+          </p>
+
+          <div class="hero-btns">
+            <a href="/services" class="btn btn-secondary btn-lg">
+              <i class="bx bx-grid-alt"></i> Our Services
+            </a>
+            <a href="/contact" class="btn btn-outline-white btn-lg">
+              <i class="bx bx-envelope"></i> Contact Us
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-num" data-target="500" data-suffix="+">0+</div>
+              <div class="hero-stat-label">Clinics Supported</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num" data-target="99" data-suffix="%">0%</div>
+              <div class="hero-stat-label">Claim Accuracy</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num" data-target="10" data-suffix="+ Yrs">0</div>
+              <div class="hero-stat-label">Industry Trust</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Generated Corporate Photo -->
+        <div class="hero-illustration">
+          <div class="hero-image-container">
+            <img src="/images/hero-us-healthcare.png" alt="US Healthcare BPO Services" class="hero-main-photo" />
+            <div class="hero-overlay-card">
+              <div class="secure-badge"><i class="bx bxs-shield-quarter"></i> HIPAA Secure Operations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="section-title">Why <span>D Cyber Office</span> Stands Out</h2>
+        <p class="section-subtitle">We combine deep medical billing expertise with secure US-compliant workflows to support your practice.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card fade-up fade-up-delay-1">
+          <div class="feature-icon">🔒</div>
+          <h3>HIPAA Focused</h3>
+          <p>Full compliance with federal healthcare guidelines. Your electronic health records (PHI) are kept strictly secure and confidential.</p>
+        </div>
+        <div class="feature-card fade-up fade-up-delay-2">
+          <div class="feature-icon">👥</div>
+          <h3>Experienced Team</h3>
+          <p>Certified AAPC coders and experienced billing specialists with a deep understanding of US payer rules and state regulations.</p>
+        </div>
+        <div class="feature-card fade-up fade-up-delay-3">
+          <div class="feature-icon">🛡️</div>
+          <h3>Secure Workflow</h3>
+          <p>Encrypted data channels, secure remote desk gateways, and two-factor authentication protect all administrative transactions.</p>
+        </div>
+        <div class="feature-card fade-up fade-up-delay-4">
+          <div class="feature-icon">⚡</div>
+          <h3>Fast Turnaround</h3>
+          <p>Prompt processing. Verification is done in real time, and claims are submitted within 24 to 48 hours of service.</p>
+        </div>
+        <div class="feature-card fade-up fade-up-delay-5">
+          <div class="feature-icon">💰</div>
+          <h3>Affordable Pricing</h3>
+          <p>Flexible pricing structures tailored to your practice size, helping you reduce operational overhead costs.</p>
+        </div>
+        <div class="feature-card fade-up fade-up-delay-6">
+          <div class="feature-icon">🕐</div>
+          <h3>24/7 Support</h3>
+          <p>Our virtual assistants and support desks are active around the clock, providing help when you need it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES PREVIEW ===================== -->
+  <section class="services-preview" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Services</span>
+        <h2 class="section-title">Comprehensive <span>Healthcare BPO</span> Solutions</h2>
+        <p class="section-subtitle">Streamlined backend billing and administration services tailored for US clinical groups.</p>
+      </div>
+
+      <div class="services-grid">
+        <% services.forEach((service, index) => { %>
+          <div class="service-card fade-up fade-up-delay-<%= index + 1 %>">
+            <div class="service-image-wrap">
+              <img src="<%= service.image %>" alt="<%= service.name %>" class="service-card-photo" />
+            </div>
+            <div class="service-card-body">
+              <h3><%= service.name %></h3>
+              <p><%= service.shortDescription %></p>
+              <a href="/services/<%= service.slug %>" class="btn btn-outline btn-sm">Learn More <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+
+      <div class="text-center mt-32">
+        <a href="/services" class="btn btn-primary">View All Services <i class="bx bx-right-arrow-alt"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS SECTION ===================== -->
+  <section class="how-we-work" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag green">Our Process</span>
+        <h2 class="section-title">How We <span>Work</span></h2>
+        <p class="section-subtitle">A proven 5-step process that ensures accuracy, speed, and HIPAA compliance at every stage.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Receive Patient Information</h3>
+            <p>We securely collect all necessary patient data, insurance details, and clinical documentation through our encrypted portal.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Analyze Requirements</h3>
+            <p>Our specialists review each case, identify insurance requirements, and flag potential issues before processing begins.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Complete Service</h3>
+            <p>Our certified team executes the requested service — whether billing, coding, verification, or authorization — with precision.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>Quality Check</h3>
+            <p>Every output undergoes a rigorous multi-level quality review to ensure accuracy, compliance, and completeness.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">05</div>
+          <div class="step-content">
+            <h3>Deliver Reports</h3>
+            <p>We deliver clean, detailed reports and processed claims to your team — on time, every time, with full transparency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our <span>Clients Say</span></h2>
+        <p class="section-subtitle">Real results from real healthcare providers who trust D Cyber Office.</p>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="testimonials-track">
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="testimonial-text">"D Cyber Office transformed our billing process completely. Our claim approval rate jumped from 82% to 97% within the first quarter. Their team is professional, responsive, and truly understands healthcare billing."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#0B5ED7,#00B894)">DR</div>
+              <div class="author-info">
+                <strong>Dr. Robert Mitchell</strong>
+                <span>Family Practice, Texas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="testimonial-text">"The prior authorization team at D Cyber Office saved us countless hours every week. Their turnaround time is exceptional and the accuracy rate is outstanding. Highly recommend for any busy practice."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#6C63FF,#0B5ED7)">SC</div>
+              <div class="author-info">
+                <strong>Sarah Chen, MD</strong>
+                <span>Orthopedic Surgery Center, CA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <p class="testimonial-text">"Switching to D Cyber Office for our revenue cycle management was the best business decision we made. Revenue increased by 35% in 6 months, and our A/R days dropped significantly."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#00B894,#0097a7)">JA</div>
+              <div class="author-info">
+                <strong>James Anderson</strong>
+                <span>Multi-Specialty Clinic, NY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn prev" aria-label="Previous">&#8592;</button>
+        <div class="slider-dots"></div>
+        <button class="slider-btn next" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff;margin-bottom:16px;display:inline-block;">Take Action</span>
+      <h2>Ready to Improve Your<br>Healthcare Operations?</h2>
+      <p>Partner with D Cyber Office and experience the difference. HIPAA-compliant, accurate, and always available.</p>
+      <div class="cta-btns">
+        <a href="/contact" class="btn btn-secondary btn-lg">
+          <i class="bx bx-envelope"></i> Contact Us
+        </a>
+        <a href="/contact" class="btn btn-outline-white btn-lg">
+          <i class="bx bx-calendar"></i> Request Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>

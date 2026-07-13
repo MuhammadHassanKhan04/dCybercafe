@@ -1,0 +1,163 @@
+<%- include('partials/header') %>
+
+  <!-- SERVICE HERO -->
+  <section class="service-hero">
+    <div class="container">
+      <div class="breadcrumb" style="margin-bottom:20px;">
+        <a href="/">Home</a>
+        <span>/</span>
+        <a href="/services">Services</a>
+        <span>/</span>
+        <span style="color:rgba(255,255,255,0.9)"><%= service.name %></span>
+      </div>
+      <div class="service-hero-content">
+        <div>
+          <div class="hero-badge" style="margin-bottom:16px;">
+            <div class="hero-badge-dot"></div>
+            <%= service.category.toUpperCase() %> SERVICES
+          </div>
+          <h1><%= service.name %></h1>
+          <p><%= service.shortDescription %></p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="/contact" class="btn btn-secondary">Request Service <i class="bx bx-right-arrow-alt"></i></a>
+            <a href="/contact" class="btn btn-outline-white">Contact Us <i class="bx bx-envelope"></i></a>
+          </div>
+        </div>
+        <div class="service-hero-icon"><%= service.icon %></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE OVERVIEW -->
+  <section class="service-overview">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="overview-text slide-in-left">
+          <span class="section-tag">Service Overview</span>
+          <h2>What is <span><%= service.name %>?</span></h2>
+          <p><%= service.overview %></p>
+          
+          <div class="overview-points">
+            <div class="overview-point">
+              <div class="point-check">✓</div>
+              <span>Industry-compliant workflows and security protocols</span>
+            </div>
+            <div class="overview-point">
+              <div class="point-check">✓</div>
+              <span>Fully integrated EMR/PM database setups</span>
+            </div>
+            <div class="overview-point">
+              <div class="point-check">✓</div>
+              <span>Real-time claim status and recovery audits</span>
+            </div>
+            <div class="overview-point">
+              <div class="point-check">✓</div>
+              <span>Comprehensive monthly administrative reviews</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="overview-visual slide-in-right">
+          <div class="detail-service-image-container">
+            <img src="<%= service.image %>" alt="<%= service.name %>" class="detail-service-photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY IT MATTERS -->
+  <section style="padding:60px 0;background:var(--bg-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why It Matters</span>
+        <h2>Why It <span>Is Critical</span></h2>
+        <p class="section-subtitle">A professional administrative approach avoids billing blockages and secures cash reserves.</p>
+      </div>
+      <div class="why-matters fade-up">
+        <div class="why-matters-text-wrap">
+          <p class="why-matters-paragraph"><%= service.whyItMatters %></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR WORKFLOW -->
+  <section class="service-workflow">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag green">Our Process</span>
+        <h2>Our <span>Workflow</span></h2>
+        <p class="section-subtitle">A proven process designed for speed, accuracy, and HIPAA compliance.</p>
+      </div>
+      <div class="workflow-grid">
+        <% service.workflow.forEach(step => { %>
+          <div class="workflow-step fade-up">
+            <div class="workflow-num"><%= step.step %></div>
+            <h4><%= step.title %></h4>
+            <p><%= step.description %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="service-benefits">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Key Benefits</span>
+        <h2>Benefits of Our <span>Service</span></h2>
+        <p class="section-subtitle">Measurable improvements to your practice's efficiency and revenue performance.</p>
+      </div>
+      <div class="benefits-grid">
+        <% service.benefits.forEach((benefit, index) => { %>
+          <div class="benefit-card fade-up">
+            <span class="benefit-icon">⚡</span>
+            <h4><%= benefit.title %></h4>
+            <p><%= benefit.description %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <% if (service.faqs && service.faqs.length > 0) { %>
+    <section class="service-faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">FAQs</span>
+          <h2>Frequently Asked <span>Questions</span></h2>
+        </div>
+        <div class="faq-list">
+          <% service.faqs.forEach(faq => { %>
+            <div class="faq-item">
+              <div class="faq-question">
+                <%= faq.q %>
+                <div class="faq-icon">+</div>
+              </div>
+              <div class="faq-answer">
+                <div class="faq-answer-inner"><%= faq.a %></div>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      </div>
+    </section>
+  <% } %>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff;margin-bottom:16px;display:inline-block;">Get Started</span>
+      <h2>Need <%= service.name %>?</h2>
+      <p>Partner with D Cyber Office and let our experienced team optimize your billing and operations.</p>
+      <div class="cta-btns">
+        <a href="/contact" class="btn btn-secondary btn-lg"><i class="bx bx-check-shield"></i> Request Service</a>
+        <a href="/contact" class="btn btn-outline-white btn-lg"><i class="bx bx-envelope"></i> Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>

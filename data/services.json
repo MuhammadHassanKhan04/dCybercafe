@@ -1,0 +1,263 @@
+[
+  {
+    "slug": "insurance-verification",
+    "name": "Insurance Verification",
+    "icon": "🏥",
+    "image": "/images/insurance-verification.png",
+    "category": "verification",
+    "shortDescription": "Confirm active coverage, copays, deductibles, and benefits before patient visits to guarantee payment authorization.",
+    "overview": "Insurance verification is the process of confirming a patient's active coverage, benefits, and policy details with the payer before healthcare services are delivered. It prevents upfront claim denials and reduces administrative overhead on clinical staff.",
+    "whyItMatters": "Over 75% of denials occur due to eligibility and registration issues. Direct, upfront verification captures policy changes, active statuses, and specific plan benefits before services are rendered, protecting your practice's bottom line.",
+    "benefits": [
+      { "title": "Reduce Denials", "description": "Ensure demographic info and policy numbers match payer records perfectly." },
+      { "title": "Optimize POS Collections", "description": "Empower your front desk to collect correct copays and outstanding deductibles at check-in." },
+      { "title": "Save Administrative Time", "description": "Outsource hours of phone holds and payer portal checks to our specialized BPO team." },
+      { "title": "Faster Payments", "description": "Submitting clean eligibility data results in claims being adjudicated much faster and without delays." }
+    ],
+    "workflow": [
+      { "step": "01", "title": "Receive Schedule", "description": "Securely upload patient schedules and insurance credentials to our encrypted portal." },
+      { "step": "02", "title": "Verify Payer Coverage", "description": "We contact payers directly and check online databases to confirm active policy status." },
+      { "step": "03", "title": "Detail Plan Benefits", "description": "Collect specific copays, deductibles met, and out-of-pocket maximum limits." },
+      { "step": "04", "title": "Update EMR Records", "description": "Write verified coverage rules directly into your EMR or billing systems." },
+      { "step": "05", "title": "Alert Front-Desk", "description": "Deliver a concise sheet alerting your staff of patient responsibility for same-day collections." }
+    ],
+    "faqs": [
+      { "q": "When do you perform the insurance verification?", "a": "We verify eligibility 24 to 48 hours prior to the patient's scheduled appointment. This ensures you have real-time information when the patient walks through your doors." },
+      { "q": "Which insurance payers do you cover?", "a": "We verify coverage with 500+ payers including Medicare, Medicaid, Blue Cross Blue Shield, Aetna, Cigna, United Healthcare, Humana, and regional commercial plans." }
+    ]
+  },
+  {
+    "slug": "insurance-eligibility",
+    "name": "Insurance Eligibility",
+    "icon": "✅",
+    "image": "/images/insurance-eligibility.png",
+    "category": "verification",
+    "shortDescription": "Determine patient network status, specialty coverage limits, and out-of-pocket maximums in real time.",
+    "overview": "Insurance eligibility details the specific network rules, specialty policy caps, referral needs, and pre-existing condition exclusions for scheduled procedures. It provides an in-depth benefits breakdown beyond standard active/inactive coverage checks.",
+    "whyItMatters": "Even active policies may exclude specific specialty codes, physical therapies, or diagnostic procedures. Eligibility auditing confirms that a specific code is covered for a specific patient, avoiding unexpected out-of-pocket bills and patient disputes.",
+    "benefits": [
+      { "title": "Confirm Code Coverage", "description": "Verify if the specific CPT codes planned are covered by the patient's plan." },
+      { "title": "Identify HMO Referrals", "description": "Confirm if an HMO primary care physician referral is required before services." },
+      { "title": "Out-of-Pocket Breakdown", "description": "Gather detailed deductible, copay, and coinsurance percentages for the scheduled procedure." },
+      { "title": "Mitigate Compliance Risks", "description": "Avoid administering treatments that are excluded or deemed experimental by the payer." }
+    ],
+    "workflow": [
+      { "step": "01", "title": "Submit CPT Codes", "description": "Send the scheduled patient's medical records and target procedure CPT codes." },
+      { "step": "02", "title": "Payer Policy Review", "description": "Our specialists audit specific payer medical necessity policies and guidelines." },
+      { "step": "03", "title": "Determine Network Status", "description": "Check if your provider group is in-network or out-of-network for the patient's plan." },
+      { "step": "04", "title": "Document Referrals", "description": "Verify and link required referral documents from primary care providers." },
+      { "step": "05", "title": "Eligibility Clearance", "description": "Deliver a detailed authorization-eligibility certificate for the medical charts." }
+    ],
+    "faqs": [
+      { "q": "What is the difference between verification and eligibility?", "a": "Verification confirms whether the insurance policy is active. Eligibility goes deeper to check if the specific procedure code, therapist, or equipment is covered under that active plan." }
+    ]
+  },
+  {
+    "slug": "medical-billing",
+    "name": "Medical Billing",
+    "icon": "🧾",
+    "image": "/images/medical-billing.png",
+    "category": "billing",
+    "shortDescription": "Prepare error-free electronic claim packages and manage billing records for fast payment processing.",
+    "overview": "Medical billing involves taking coded medical charts and transforming them into standardized claim files. We audit billing rules, compile invoice files, and submit clean claims to insurance clearinghouses to ensure rapid practice reimbursement.",
+    "whyItMatters": "Manual billing processes lead to high error rates and slow down cash collections. Professional, automated billing workflows reduce claims processing cycle time, letting you collect outstanding fees faster.",
+    "benefits": [
+      { "title": "Optimized Collections", "description": "Outsourcing billing maximizes your monthly collections and revenue capture." },
+      { "title": "Fewer Billing Errors", "description": "Pre-submission scrubbers check claims against payer-specific rules before filing." },
+      { "title": "Stay Compliant", "description": "Our billers keep your submissions compliant with Medicare, Medicaid, and private commercial payer rules." },
+      { "title": "Free Up Clinical Staff", "description": "Allows your clinical team to focus on patient care instead of managing paperwork." }
+    ],
+    "workflow": [
+      { "step": "01", "title": "Receive Coded Encounters", "description": "Gather coded encounter records directly from your EMR system." },
+      { "step": "02", "title": "Claim Scrubbing", "description": "Audit claims for missing modifiers, demographic mismatches, and coding errors." },
+      { "step": "03", "title": "Submit Claims", "description": "Transmit claims electronically through secured medical clearinghouses." },
+      { "step": "04", "title": "Track Payer Status", "description": "Monitor claim status daily to identify payment clearances and holds." },
+      { "step": "05", "title": "Payment Posting", "description": "Post payment remits to patient ledgers, balancing cash logs." }
+    ],
+    "faqs": [
+      { "q": "What billing systems do you support?", "a": "We support all major EMR and PM software including Epic, eClinicalWorks, Allscripts, Kareo, NextGen, and WebPT." }
+    ]
+  },
+  {
+    "slug": "claim-submission",
+    "name": "Claim Submission",
+    "icon": "🚀",
+    "image": "/images/claim-submission.png",
+    "category": "billing",
+    "shortDescription": "Electronic claim transmissions through secure clearinghouses with pre-submission claim scrubbing.",
+    "overview": "Claim Submission is the process of generating, validating, and transmitting claims to insurance payers. We scrub claims to identify billing conflicts, coordinate with clearinghouses, and ensure that every file is accepted by the payer within hours of treatment.",
+    "whyItMatters": "Filing clean claims within timely filing limits is critical. Delayed submissions directly delay payments, and unscrubbed claims often result in immediate rejections that tie up cash flow.",
+    "benefits": [
+      { "title": "First-Pass Yield", "description": "98% first-pass claim acceptance rate ensures immediate payer processing." },
+      { "title": "24-48 Hour Submission", "description": "Claims are compiled, scrubbed, and submitted within 24 to 48 hours of service." },
+      { "title": "Clearinghouse Reconciliation", "description": "We reconcile clearinghouse rejections daily to prevent claims from stalling." },
+      { "title": "Secure Transmission", "description": "Full end-to-end encryption complies with all security regulations." }
+    ],
+    "workflow": [
+      { "step": "01", "title": "Collect Encounters", "description": "Gather daily patient logs and coding sheets from the provider's EMR." },
+      { "step": "02", "title": "Perform Billing Scans", "description": "Audit claims for demographic matches, payer rules, and code conflicts." },
+      { "step": "03", "title": "Clearinghouse Upload", "description": "Transmit clean claims to clearinghouses for initial validation." },
+      { "step": "04", "title": "Resolve Rejections", "description": "Instantly correct and re-file any clearinghouse rejects." },
+      { "step": "05", "title": "Payer Acknowledgement", "description": "Confirm the payer has accepted the claim for final adjudication." }
+    ],
+    "faqs": [
+      { "q": "How fast do you submit claims?", "a": "We submit claims within 24 to 48 hours of receiving encounter notes, keeping your cash flow consistent." }
+    ]
+  },
+  {
+    "slug": "payment-posting",
+    "name": "Payment Entry & Payment Posting",
+    "icon": "📊",
+    "image": "/images/payment-posting.png",
+    "category": "billing",
+    "shortDescription": "Post insurance ERAs, EOBs, and patient payments, reconciling daily cash and bank deposits.",
+    "overview": "Payment Posting & Entry is the process of updating patient ledgers with insurance checks, direct deposits, and patient payments. We process electronic (ERA) and paper (EOB) remittances, apply write-offs, and identify unpaid claims for the collection team.",
+    "whyItMatters": "Unposted payments make accounts receivable reports inaccurate. Accurate, daily posting ensures patient statements are correct and identifies unpaid claims immediately for fast follow-up.",
+    "benefits": [
+      { "title": "Daily Reconciliation", "description": "We match posted balances against bank deposits daily to prevent cash logging errors." },
+      { "title": "Accurate Patient Balances", "description": "Ensures patient statements are generated only for the correct remaining amounts." },
+      { "title": "Speed Up Denials Appeals", "description": "Post denial reasons immediately, routing them to the appeals team." },
+      { "title": "Contractual Audit", "description": "Verify payer payments match your contracted fee schedules." }
+    ],
+    "workflow": [
+      { "step": "01", "title": "Retrieve Remittances", "description": "Gather electronic ERAs, paper EOBs, and patient payment logs." },
+      { "step": "02", "title": "Post Payer Receipts", "description": "Record insurance payments, contractual write-offs, and copay allocations." },
+      { "step": "03", "title": "Match Deposits", "description": "Reconcile daily posted totals with actual bank deposits." },
+      { "step": "04", "title": "Route Unpaid Claims", "description": "Direct denied claims to the recovery team for appeals." },
+      { "step": "05", "title": "Patient Statement Run", "description": "Generate clear bills for the remaining patient balance." }
+    ],
+    "faqs": [
+      { "q": "How do you handle payer write-offs?", "a": "We apply write-offs based on your contracted fee schedules, ensuring patient statements reflect only the allowed balances." }
+    ]
+  },
+  {
+    "slug": "denial-management",
+    "name": "Denial Management",
+    "icon": "💸",
+    "image": "/images/denial-management.png",
+    "category": "recovery",
+    "shortDescription": "Analyze denial reasons, file appeals with clinical documentation, and recover denied payments.",
+    "overview": "Denial Management is the process of resolving rejected insurance claims. Our recovery team investigates why claims were denied, gathers supporting medical records, writes appeal letters, and resubmits corrected claims to recover outstanding payments.",
+    "whyItMatters": "Up to 60% of denied claims are never appealed, leading to significant revenue loss. Proactive appeals management recovers these funds and prevents write-offs.",
+    "benefits": [
+      { "title": "Recover Lost Revenue", "description": "Turn denied claims into paid collections, boosting cash flow." },
+      { "title": "Reduce bad Debt", "description": "Prevent write-offs by appealing claims until they are resolved." },
+      { "title": "Payer Relations", "description": "We resolve persistent payer disputes and coding disagreements." },
+      { "title": "Root-Cause Analysis", "description": "Identify billing errors early to prevent future claim rejections." }
+    ],
+    "workflow": [
+      { "step": "01", "title": "Identify Denials", "description": "Identify and log denied claims from ERAs daily." },
+      { "step": "02", "title": "Analyze Rejections", "description": "Determine the cause of the denial (eligibility, coding, authorizations)." },
+      { "step": "03", "title": "Correct Claims", "description": "Update missing demographic info, coding modifiers, or patient records." },
+      { "step": "04", "title": "File Formal Appeals", "description": "Submit structured appeal letters and clinical charts to the payer." },
+      { "step": "05", "title": "Track appeal Status", "description": "Follow up weekly with payers until the claim is approved and paid." }
+    ],
+    "faqs": [
+      { "q": "What is your denial recovery rate?", "a": "Our specialists achieve a 95% recovery rate on appealed denials, resolving claims within 30 days." }
+    ]
+  },
+  {
+    "slug": "aging-reports",
+    "name": "Aging Reports & A/R Recovery",
+    "icon": "⏳",
+    "image": "/images/aging-reports.png",
+    "category": "recovery",
+    "shortDescription": "Track aged accounts receivable, identify outstanding claims, and recover unpaid insurance balances.",
+    "overview": "A/R Recovery is the process of collecting outstanding, unpaid claims that are past due. We review aging reports, identify past-due balances (30, 60, 90+ days), and follow up with payers to resolve processing delays and secure payments.",
+    "whyItMatters": "The longer a claim remains unpaid, the harder it is to collect. Systematic aging analysis prevents claims from expiring due to timely filing limits, ensuring your practice is paid for every service.",
+    "benefits": [
+      { "title": "Decrease AR Days", "description": "Reduce average accounts receivable cycles to 32 days or less." },
+      { "title": "Collect Old Debt", "description": "Recover outstanding balances from claims up to a year old." },
+      { "title": "Weekly Follow-Up", "description": "Continuous follow-up with payers on all past-due claims." },
+      { "title": "Cleaner Ledger Balance", "description": "Organize collections to keep your practice's books clean and accurate." }
+    ],
+    "workflow": [
+      { "step": "01", "title": "Pull AR Ledger", "description": "Identify all outstanding claims past 30, 60, and 90 days." },
+      { "step": "02", "title": "Payer follow-Up", "description": "Contact insurance reps to locate lost claims and resolve delays." },
+      { "step": "03", "title": "Resolve Processing Blocks", "description": "Provide missing medical charts or corrected billing data to the payer." },
+      { "step": "04", "title": "Resubmit Claims", "description": "Re-file claims when the payer has no record of the initial submission." },
+      { "step": "05", "title": "Collect Collections", "description": "Track payments to ensure they are posted correctly and settle accounts." }
+    ],
+    "faqs": [
+      { "q": "How old of claims can you collect?", "a": "We recover outstanding claims up to 365 days old, depending on the insurance payer's timely filing limits." }
+    ]
+  },
+  {
+    "slug": "credentialing-enrollment",
+    "name": "Credentialing & Enrollment",
+    "icon": "📋",
+    "image": "/images/credentialing.png",
+    "category": "verification",
+    "shortDescription": "Enroll providers in commercial networks and government programs, managing CAQH profiles.",
+    "overview": "Provider Credentialing is the process of verifying a provider's licenses, certifications, and experience. Payer Enrollment registers providers with insurance networks so they can submit in-network claims and receive payments.",
+    "whyItMatters": "Incomplete credentialing prevents practices from billing insurance, causing delays in care and lost revenue. Proactive enrollment gets new providers in-network quickly to start billing without delay.",
+    "benefits": [
+      { "title": "Faster Approvals", "description": "Reduce enrollment processing time by up to 30% with clean submissions." },
+      { "title": "CAQH Profile Setup", "description": "We build, update, and attest your CAQH profiles to meet payer requirements." },
+      { "title": "Prevent Lapsed Contracts", "description": "Proactive tracking of licensures and DEA registrations prevents lapses." },
+      { "title": "Expand Patient Access", "description": "Join more insurance networks to welcome more patients to your practice." }
+    ],
+    "workflow": [
+      { "step": "01", "title": "Collect Profile Data", "description": "Gather licenses, certifications, and liability policies securely." },
+      { "step": "02", "title": "CAQH Review", "description": "Verify and align all details in your CAQH profile." },
+      { "step": "03", "title": "Payer Applications", "description": "Prepare and submit specific enrollment applications to insurance payers." },
+      { "step": "04", "title": "Follow Up Weekly", "description": "Contact payers to track status and resolve processing questions." },
+      { "step": "05", "title": "Verify Contracts", "description": "Confirm active network status and document fee schedules." }
+    ],
+    "faqs": [
+      { "q": "How long does payer enrollment take?", "a": "Commercial payer enrollment takes 90–120 days, while Medicare and Medicaid enrollment takes 60–90 days." }
+    ]
+  },
+  {
+    "slug": "medical-coding",
+    "name": "Medical Coding",
+    "icon": "🔬",
+    "image": "/images/coding.png",
+    "category": "coding",
+    "shortDescription": "Assign accurate CPT, ICD-10, and HCPCS codes from clinical charts to ensure full compliance.",
+    "overview": "Medical Coding translates clinical documentation (operative notes, doctor charts, lab reports) into standard codes (ICD-10-CM, CPT, HCPCS Level II) required for insurance claims and clinical records.",
+    "whyItMatters": "Coding errors lead to immediate denials and compliance audits. Accurate coding captures the full scope of services provided, maximizing reimbursement while ensuring compliance.",
+    "benefits": [
+      { "title": "Certified Coding Team", "description": "Coders certified by AAPC/AHIMA with training across 50+ specialties." },
+      { "title": "99% Coding Accuracy", "description": "Multi-level quality reviews ensure coding accuracy on every chart." },
+      { "title": "Reduce Compliance Risk", "description": "Prevent audits and penalties with compliant coding practices." },
+      { "title": "Fast turnaround", "description": "Charts are coded and returned within 24 to 48 hours." }
+    ],
+    "workflow": [
+      { "step": "01", "title": "Import Charts", "description": "Access clinical encounter documentation securely from your EHR." },
+      { "step": "02", "title": "Review Documentation", "description": "Certified coders read notes to verify diagnoses and procedures." },
+      { "step": "03", "title": "Assign Medical Codes", "description": "Assign correct ICD-10, CPT, and modifier codes." },
+      { "step": "04", "title": "Quality Audit", "description": "A senior coder reviews files for accuracy and compliance." },
+      { "step": "05", "title": "Deliver Coded Charts", "description": "Upload coded records back to your billing software within 48 hours." }
+    ],
+    "faqs": [
+      { "q": "Which coding classification systems do you support?", "a": "We support ICD-10-CM, ICD-10-PCS, CPT, and HCPCS Level II classification codes." }
+    ]
+  },
+  {
+    "slug": "revenue-reporting",
+    "name": "Revenue Reporting & Analytics",
+    "icon": "📈",
+    "image": "/images/revenue-reporting.png",
+    "category": "management",
+    "shortDescription": "Detailed monthly practice analytics, financial reporting, collection summaries, and A/R trends.",
+    "overview": "Revenue Reporting provides data-driven insights into your practice's financial performance. We compile monthly collections reports, claim denial analyses, and A/R updates to help you make informed business decisions.",
+    "whyItMatters": "Without clean reports, it is difficult to spot billing errors or track collection trends. Financial reporting keeps your practice's finances transparent.",
+    "benefits": [
+      { "title": "Financial Transparency", "description": "Access clear, detailed summaries of collections, write-offs, and outstanding balances." },
+      { "title": "Denial Analytics", "description": "Identify which payers reject claims most often and resolve billing errors." },
+      { "title": "Collection Performance", "description": "Track collection rates to identify opportunities for growth." },
+      { "title": "Custom Reports", "description": "Financial summaries customized to show the specific metrics your practice needs." }
+    ],
+    "workflow": [
+      { "step": "01", "title": "Collect Daily Data", "description": "Aggregate daily claim submissions, posting sheets, and bank deposits." },
+      { "step": "02", "title": "Compile Weekly Summaries", "description": "Trace aging trends and denial codes weekly." },
+      { "step": "03", "title": "Analyze Key Metrics", "description": "Identify payer billing lags and collection rates." },
+      { "step": "04", "title": "Generate Final Report", "description": "Deliver structured monthly financial summaries to your practice." },
+      { "step": "05", "title": "Operational consultation", "description": "Review reports with your team to optimize billing workflows and revenue." }
+    ],
+    "faqs": [
+      { "q": "What reports are included in your standard service?", "a": "We provide collection summaries, denial analytics, aging A/R reports, and payer performance reviews monthly." }
+    ]
+  }
+]

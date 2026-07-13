@@ -3,12 +3,12 @@
   <!-- SERVICE HERO -->
   <section class="service-hero">
     <div class="container">
-      <div class="breadcrumb" style="margin-bottom:20px;">
+      <div class="breadcrumb" style="margin-bottom:20px; justify-content: flex-start;">
         <a href="/">Home</a>
         <span>/</span>
         <a href="/services">Services</a>
         <span>/</span>
-        <span style="color:rgba(255,255,255,0.9)"><%= service.name %></span>
+        <span style="color:var(--text-dark); font-weight: 500;"><%= service.name %></span>
       </div>
       <div class="service-hero-content">
         <div>
@@ -20,7 +20,7 @@
           <p><%= service.shortDescription %></p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;">
             <a href="/contact" class="btn btn-secondary">Request Service <i class="bx bx-right-arrow-alt"></i></a>
-            <a href="/contact" class="btn btn-outline-white">Contact Us <i class="bx bx-envelope"></i></a>
+            <a href="/contact" class="btn btn-outline">Contact Us <i class="bx bx-envelope"></i></a>
           </div>
         </div>
         <div class="service-hero-icon"><%= service.icon %></div>

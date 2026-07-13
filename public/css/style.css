@@ -1204,31 +1204,32 @@ footer {
    SERVICES PAGE
    ==================================================== */
 .page-hero {
-  background: linear-gradient(135deg, #0B1F4F 0%, var(--primary) 60%, #00B894 100%);
+  background: #ffffff;
   padding: 140px 0 80px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid var(--border);
 }
 
 .page-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(11,94,215,0.04) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(11,94,215,0.04) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
 .page-hero h1 {
-  color: var(--white);
+  color: var(--text-dark);
   margin-bottom: 16px;
   position: relative;
   z-index: 1;
 }
 
 .page-hero p {
-  color: rgba(255,255,255,0.8);
+  color: var(--text-muted);
   max-width: 560px;
   margin: 0 auto;
   font-size: 1.05rem;
@@ -1247,15 +1248,15 @@ footer {
 }
 
 .breadcrumb a {
-  color: rgba(255,255,255,0.6);
+  color: var(--text-muted);
   font-size: 0.85rem;
   transition: var(--transition);
 }
 
-.breadcrumb a:hover { color: var(--white); }
+.breadcrumb a:hover { color: var(--primary); }
 
 .breadcrumb span {
-  color: rgba(255,255,255,0.4);
+  color: var(--text-light);
   font-size: 0.85rem;
 }
 
@@ -1355,18 +1356,19 @@ footer {
    INDIVIDUAL SERVICE PAGE
    ==================================================== */
 .service-hero {
-  background: linear-gradient(135deg, #0B1F4F 0%, var(--primary) 60%, var(--secondary) 100%);
+  background: #ffffff;
   padding: 140px 0 80px;
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid var(--border);
 }
 
 .service-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(11,94,215,0.04) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(11,94,215,0.04) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
@@ -1380,13 +1382,13 @@ footer {
 }
 
 .service-hero h1 {
-  color: var(--white);
+  color: var(--text-dark);
   margin-bottom: 16px;
   font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .service-hero p {
-  color: rgba(255,255,255,0.85);
+  color: var(--text-muted);
   font-size: 1.05rem;
   max-width: 560px;
   margin-bottom: 32px;
@@ -1396,9 +1398,8 @@ footer {
   width: 120px;
   height: 120px;
   border-radius: var(--radius-lg);
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: var(--primary-light);
+  border: 1px solid rgba(11,94,215,0.15);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -71,7 +71,11 @@ app.get('/contact', (req, res) => {
   });
 });
 
-// Start Express Server
-app.listen(PORT, () => {
-  console.log(`D Cyber Office server running at http://localhost:${PORT}`);
-});
+// Start Express Server (only when run directly)
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`D Cyber Office server running at http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;

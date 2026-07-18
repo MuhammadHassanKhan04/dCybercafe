@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   
-  <!-- Vercel Analytics -->
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  <!-- Vercel Web Analytics -->
+  <script type="module">
+    import { inject } from '/js/analytics.mjs';
+    inject();
   </script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 

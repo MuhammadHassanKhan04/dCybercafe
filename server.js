@@ -70,7 +70,18 @@ app.get('/contact', (req, res) => {
     title: 'Contact Us | D Cyber Office BPO'
   });
 });
+// 5. Legal Pages
+app.get('/privacy', (req, res) => {
+  res.render('privacy', { title: 'Privacy Policy | D Cyber Office BPO' });
+});
 
+app.get('/terms', (req, res) => {
+  res.render('terms', { title: 'Terms of Service | D Cyber Office BPO' });
+});
+
+app.get('/hipaa', (req, res) => {
+  res.render('hipaa', { title: 'HIPAA Notice & Compliance | D Cyber Office BPO' });
+});
 // Start Express Server (only when run directly)
 if (require.main === module) {
   app.listen(PORT, () => {

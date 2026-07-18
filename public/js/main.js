@@ -112,59 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     counters.forEach(c => counterObs.observe(c));
   }
 
-  /* ---- 7. Testimonials Slider ---- */
-  const track       = document.querySelector('.testimonials-track');
-  const prevBtn     = document.querySelector('.slider-btn.prev');
-  const nextBtn     = document.querySelector('.slider-btn.next');
-  const dotsWrap    = document.querySelector('.slider-dots');
-
-  if (track) {
-    const cards = track.querySelectorAll('.testimonial-card');
-    let current = 0;
-    let perPage = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
-    const totalPages = Math.ceil(cards.length / perPage);
-
-    // Build dots
-    if (dotsWrap) {
-      dotsWrap.innerHTML = '';
-      for (let i = 0; i < totalPages; i++) {
-        const d = document.createElement('div');
-        d.className = 'slider-dot' + (i === 0 ? ' active' : '');
-        d.addEventListener('click', () => goTo(i));
-        dotsWrap.appendChild(d);
-      }
-    }
-
-    function goTo(page) {
-      current = Math.max(0, Math.min(page, totalPages - 1));
-      const cardWidth = cards[0].offsetWidth + 28;
-      track.style.transform = `translateX(-${current * perPage * cardWidth}px)`;
-      dotsWrap?.querySelectorAll('.slider-dot').forEach((d, i) => {
-        d.classList.toggle('active', i === current);
-      });
-    }
-
-    prevBtn?.addEventListener('click', () => goTo(current - 1));
-    nextBtn?.addEventListener('click', () => goTo(current + 1));
-
-    // Auto play
-    let autoPlay = setInterval(() => {
-      goTo(current >= totalPages - 1 ? 0 : current + 1);
-    }, 4000);
-
-    track.addEventListener('mouseenter', () => clearInterval(autoPlay));
-    track.addEventListener('mouseleave', () => {
-      autoPlay = setInterval(() => {
-        goTo(current >= totalPages - 1 ? 0 : current + 1);
-      }, 4000);
-    });
-
-    // Recalculate on resize
-    window.addEventListener('resize', () => {
-      perPage = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
-      goTo(0);
-    }, { passive: true });
-  }
+  /* ---- 7. Testimonials CSS Marquee (No JS required) ---- */
 
   /* ---- 8. FAQ Accordion ---- */
   const faqItems = document.querySelectorAll('.faq-item');
